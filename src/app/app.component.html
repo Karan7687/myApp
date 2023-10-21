@@ -1,0 +1,25 @@
+<input type="number"[(ngModel)]="num1">
+<br>
+<input type="number"[(ngModel)]="num2">
+<br>
+
+<button class="btn btn-primary" (click)="add()"> Add</button>
+<br>
+<button (click)="sub()"> Sub</button>
+<br>
+<button (click)="mul()"> Mul</button>
+<br>
+<button (click)="div()"> Div</button>
+
+
+<h2>ANSWER IS :{{total}}</h2>
+
+<div *ngIf="total < 100">
+  <h1>Ans is Lesser than 100</h1>
+  
+  </div>
+
+
+<div *ngIf="total > 100">
+<h1>Ans is greater than 100</h1>
+</div>
